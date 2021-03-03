@@ -114,8 +114,8 @@ p{
 {
     margin-bottom: 50px;
     margin-top: 20px;
-    width: 150px; 
-    margin-left: 50%;
+    width: 15vmax; 
+    margin-left: 40%;
     transform: translateX(-50%);
     text-align: center;
     text-decoration: none;
@@ -126,6 +126,39 @@ p{
     background-color: #00a288;
     border-radius: 3px;
     cursor: pointer;
+    height: 3.2vmax;
+}
+.image
+{
+    margin-left: -10px;
+    align-content: center;
+    width: 1.5vmax;
+    height: 1.5vmax;
+}
+.botones
+{
+    transform: translateX(95%);
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+}
+.botonR
+{
+    margin-bottom: 50px;
+    margin-top: 20px;
+    height: 3.2vmax;
+    width: 14vmax; 
+    margin-left: 50px;
+    
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #ecea3ffb;
+    border-radius: 3px;
+    cursor: pointer;
+
 }
 .Fortalezas{
     font-size: 30px;

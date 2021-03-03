@@ -1,782 +1,787 @@
 function inicio()
 {
+    var reload = document.getElementById("reload");
+    reload.addEventListener('click', function(){
+        location.reload();
+
+    });
 
     var boton = document.getElementById("boton");
+        boton.addEventListener('click', function() {
+            if (presionado == false)
+    {
+            document.getElementById('TextoFortalezas').innerHTML='Fortalezas';
+            document.getElementById('TextoDebilidades').innerHTML='Debilidades';
+            var fortalezas1 = 0
+            var fortalezas2 = 0
+            var fortalezas3 = 0
+            var fortalezas4 = 0
 
-    boton.addEventListener('click', function() {
-        document.getElementById('TextoFortalezas').innerHTML='Fortalezas';
-        document.getElementById('TextoDebilidades').innerHTML='Debilidades';
-        var fortalezas1 = 0
-        var fortalezas2 = 0
-        var fortalezas3 = 0
-        var fortalezas4 = 0
-
-        var debilidades1 = 0
-        var debilidades2 = 0
-        var debilidades3 = 0
-        var debilidades4 = 0
-        ////////////////////////////////////////////////////////1.1
-        if (animado.checked)
-        {
-            fortalezas1 += 1;
-        }
-        else if (aventurero.checked)
-        {
-            fortalezas2 += 1;
-        }
-        else if (analitico.checked)
-        {
-            fortalezas3 += 1;
-        }
-        else if (adaptable.checked)
-        {
-            fortalezas4 += 1;
-        }
-        //////////////////////////////////////////////////////////1.2
-
-        if (jugueton.checked)
-        {
-            fortalezas1 += 1;
-        }
-        else if (persuasivo.checked)
-        {
-            fortalezas2 += 1;
-        }
-        else if (persistente.checked)
-        {
-            fortalezas3 += 1;
-        }
-        else if (pasivo.checked)
-        {
-            fortalezas4 += 1;
-        }
-        //////////////////////////////////////////////////////////1.3
-
-        if (amigable.checked)
-        {
-            fortalezas1 += 1;
-        }
-        else if (resuelto.checked)
-        {
-            fortalezas2 += 1;
-        }
-        else if (sacrificado.checked)
-        {
-            fortalezas3 += 1;
-        }
-        else if (sumiso.checked)
-        {
-            fortalezas4 += 1;
-        }
-        //////////////////////////////////////////////////////////1.4
-        if (convincente.checked)
-        {
-            fortalezas1 += 1;
-        }
-        else if (competitivo.checked)
-        {
-            fortalezas2 += 1;
-        }
-        else if (considerado.checked)
-        {
-            fortalezas3 += 1;
-        }
-        else if (controlado.checked)
-        {
-            fortalezas4 += 1;
-        }
-        //////////////////////////////////////////////////////////1.5
-
-        if (alentador.checked)
-        {
-            fortalezas1 += 1;
-        }
-        else if (recursivo.checked)
-        {
-            fortalezas2 += 1;
-        }
-        else if (respetuoso.checked)
-        {
-            fortalezas3 += 1;
-        }
-        else if (reservado.checked)
-        {
-            fortalezas4 += 1;
-        }
-        /////////////////////////////////////////////////////////////////////////////2////////////////////////////////////////////////////////////////////////////
-        if (sensato.checked)
-        {
-            fortalezas1 += 1;
-        }
-        else if (confiado.checked)
-        {
-            fortalezas2 += 1;
-        }
-        else if (sensible.checked)
-        {
-            fortalezas3 += 1;
-        }
-        else if (satisfecho.checked)
-        {
-            fortalezas4 += 1;
-        }
-        //////////////////////////////////////////////////////////2.2
-
-        if (promotor.checked)
-        {
-            fortalezas1 += 1;
-        }
-        else if (positivo.checked)
-        {
-            fortalezas2 += 1;
-        }
-        else if (planificador.checked)
-        {
-            fortalezas3 += 1;
-        }
-        else if (paciente.checked)
-        {
-            fortalezas4 += 1;
-        }
-        //////////////////////////////////////////////////////////2.3
-
-        if (espontaneo.checked)
-        {
-            fortalezas1 += 1;
-        }
-        else if (seguro.checked)
-        {
-            fortalezas2 += 1;
-        }
-        else if (programador.checked)
-        {
-            fortalezas3 += 1;
-        }
-        else if (prudente.checked)
-        {
-            fortalezas4 += 1;
-        }
-        //////////////////////////////////////////////////////////2.4
-
-        if (optimista.checked)
-        {
-            fortalezas1 += 1;
-        }
-        else if (franco.checked)
-        {
-            fortalezas2 += 1;
-        }
-        else if (ordenado.checked)
-        {
-            fortalezas3 += 1;
-        }
-        else if (servicial.checked)
-        {
-            fortalezas4 += 1;
-        }
-        //////////////////////////////////////////////////////////2.5
-
-        if (divertido.checked)
-        {
-            fortalezas1 += 1;
-        }
-        else if (fuerte.checked)
-        {
-            fortalezas2 += 1;
-        }
-        else if (fiel.checked)
-        {
-            fortalezas3 += 1;
-        }
-        else if (amistoso.checked)
-        {
-            fortalezas4 += 1;
-        }
-//////////////////////////////////////////////////////////////////////////////////3///////////////////////////////////////////////////////////////////////////
-        
-        if (encantador.checked)
-        {
-            fortalezas1 += 1;
-        }
-        else if (atrevido.checked)
-        {
-            fortalezas2 += 1;
-        }
-        else if (detallista.checked)
-        {
-            fortalezas3 += 1;
-        }
-        else if (diplomatico.checked)
-        {
-            fortalezas4 += 1;
-        }
-        //////////////////////////////////////////////////////////3.2
-
-        if (alegre.checked)
-        {
-            fortalezas1 += 1;
-        }
-        else if (confidente.checked)
-        {
-            fortalezas2 += 1;
-        }
-        else if (educado.checked)
-        {
-            fortalezas3 += 1;
-        }
-        else if (consistente.checked)
-        {
-            fortalezas4 += 1;
-        }
-        //////////////////////////////////////////////////////////3.3
-
-        if (inspirador.checked)
-        {
-            fortalezas1 += 1;
-        }
-        else if (independiente.checked)
-        {
-            fortalezas2 += 1;
-        }
-        else if (idealista.checked)
-        {
-            fortalezas3 += 1;
-        }
-        else if (inofensivo.checked)
-        {
-            fortalezas4 += 1;
-        }
-        //////////////////////////////////////////////////////////3.4
-
-        if (demostrativo.checked)
-        {
-            fortalezas1 += 1;
-        }
-        else if (decidido.checked)
-        {
-            fortalezas2 += 1;
-        }
-        else if (jocoso.checked)
-        {
-            fortalezas3 += 1;
-        }
-        else if (meditador.checked)
-        {
-            fortalezas4 += 1;
-        }
-        //////////////////////////////////////////////////////////3.5
-        if (sociable.checked)
-        {
-            fortalezas1 += 1;
-        }
-        else if (mediador.checked)
-        {
-            fortalezas2 += 1;
-        }
-        else if (musical.checked)
-        {
-            fortalezas3 += 1;
-        }
-        else if (activo.checked)
-        {
-            fortalezas4 += 1;
-        }
-
-        //////////////////////////////////////////////////////////////////////////////////4///////////////////////////////////////////////////////////////////////////
-        
-        if (charlador.checked)
-        {
-            fortalezas1 += 1;
-        }
-        else if (tenaz.checked)
-        {
-            fortalezas2 += 1;
-        }
-        else if (considerado3.checked)
-        {
-            fortalezas3 += 1;
-        }
-        else if (tolerante.checked)
-        {
-            fortalezas4 += 1;
-        }
-        //////////////////////////////////////////////////////////4.2
-
-        if (alegre2.checked)
-        {
-            fortalezas1 += 1;
-        }
-        else if (lider.checked)
-        {
-            fortalezas2 += 1;
-        }
-        else if (leal.checked)
-        {
-            fortalezas3 += 1;
-        }
-        else if (oyente.checked)
-        {
-            fortalezas4 += 1;
-        }
-        //////////////////////////////////////////////////////////4.3
-
-        if (adorable.checked)
-        {
-            fortalezas1 += 1;
-        }
-        else if (jefe.checked)
-        {
-            fortalezas2 += 1;
-        }
-        else if (planeador.checked)
-        {
-            fortalezas3 += 1;
-        }
-        else if (contento.checked)
-        {
-            fortalezas4 += 1;
-        }
-        //////////////////////////////////////////////////////////4.4
-
-        if (popular.checked)
-        {
-            fortalezas1 += 1;
-        }
-        else if (productivo.checked)
-        {
-            fortalezas2 += 1;
-        }
-        else if (perfeccionista.checked)
-        {
-            fortalezas3 += 1;
-        }
-        else if (placentero.checked)
-        {
-            fortalezas4 += 1;
-        }
-        //////////////////////////////////////////////////////////4.5
-        if (campante.checked)
-        {
-            fortalezas1 += 1;
-        }
-        else if (atrevido2.checked)
-        {
-            fortalezas2 += 1;
-        }
-        else if (comportado.checked)
-        {
-            fortalezas3 += 1;
-        }
-        else if (balanceado.checked)
-        {
-            fortalezas4 += 1;
-        }
-
-//////////////////////////////////////////////////////////////////////////////////////DEBILIDADES////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////DEBILIDADES////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////DEBILIDADES////////////////////////////////////////////////////////////////
-        ////////////////////////////////////////////////////////1.1
-        if (arrogante.checked)
-        {
-            debilidades1 += 1;
-        }
-        else if (mandon.checked)
-        {
-            debilidades2 += 1;
-        }
-        else if (confuso.checked)
-        {
-            debilidades3 += 1;
-        }
-        else if (timido.checked)
-        {
-            debilidades4 += 1;
-        }
-        //////////////////////////////////////////////////////////1.2
-
-        if (indisciplinado.checked)
-        {
-            debilidades1 += 1;
-        }
-        else if (compasion.checked)
-        {
-            debilidades2 += 1;
-        }
-        else if (entusiasmo.checked)
-        {
-            debilidades3 += 1;
-        }
-        else if (acusador.checked)
-        {
-            debilidades4 += 1;
-        }
-        //////////////////////////////////////////////////////////1.3
-
-        if (rebelde.checked)
-        {
-            debilidades1 += 1;
-        }
-        else if (resentido.checked)
-        {
-            debilidades2 += 1;
-        }
-        else if (resistente.checked)
-        {
-            debilidades3 += 1;
-        }
-        else if (reservado2.checked)
-        {
-            debilidades4 += 1;
-        }
-        //////////////////////////////////////////////////////////1.4
-        if (olvidadizo.checked)
-        {
-            debilidades1 += 1;
-        }
-        else if (franco2.checked)
-        {
-            debilidades2 += 1;
-        }
-        else if (fastidioso.checked)
-        {
-            debilidades3 += 1;
-        }
-        else if (temeroso.checked)
-        {
-            debilidades4 += 1;
-        }
-        //////////////////////////////////////////////////////////1.5
-
-        if (interrumpe.checked)
-        {
-            debilidades1 += 1;
-        }
-        else if (impaciente.checked)
-        {
-            debilidades2 += 1;
-        }
-        else if (inseguro.checked)
-        {
-            debilidades3 += 1;
-        }
-        else if (indeciso.checked)
-        {
-            debilidades4 += 1;
-        }
-        /////////////////////////////////////////////////////////////////////////////2////////////////////////////////////////////////////////////////////////////
-        if (impredecible.checked)
-        {
-            debilidades1 += 1;
-        }
-        else if (afecto.checked)
-        {
-            debilidades2 += 1;
-        }
-        else if (restringido.checked)
-        {
-            debilidades3 += 1;
-        }
-        else if (no_popular.checked)
-        {
-            debilidades4 += 1;
-        }
-        //////////////////////////////////////////////////////////2.2
-
-        if (arbitrario.checked)
-        {
-            debilidades1 += 1;
-        }
-        else if (obstinado.checked)
-        {
-            debilidades2 += 1;
-        }
-        else if (contentar.checked)
-        {
-            debilidades3 += 1;
-        }
-        else if (vacilante.checked)
-        {
-            debilidades4 += 1;
-        }
-        //////////////////////////////////////////////////////////2.3
-
-        if (permisivo.checked)
-        {
-            debilidades1 += 1;
-        }
-        else if (orgulloso.checked)
-        {
-            debilidades2 += 1;
-        }
-        else if (pesimista.checked)
-        {
-            debilidades3 += 1;
-        }
-        else if (simple.checked)
-        {
-            debilidades4 += 1;
-        }
-        //////////////////////////////////////////////////////////2.4
-
-        if (enojar.checked)
-        {
-            debilidades1 += 1;
-        }
-        else if (argumentador.checked)
-        {
-            debilidades2 += 1;
-        }
-        else if (metas.checked)
-        {
-            debilidades3 += 1;
-        }
-        else if (distanciado.checked)
-        {
-            debilidades4 += 1;
-        }
-        //////////////////////////////////////////////////////////2.5
-
-        if (ingenuo.checked)
-        {
-            debilidades1 += 1;
-        }
-        else if (nervioso.checked)
-        {
-            debilidades2 += 1;
-        }
-        else if (indiferente.checked)
-        {
-            debilidades3 += 1;
-        }
-        else if (negativo.checked)
-        {
-            debilidades4 += 1;
-        }
-//////////////////////////////////////////////////////////////////////////////////3///////////////////////////////////////////////////////////////////////////
-        
-        if (manipulador.checked)
-        {
-            debilidades1 += 1;
-        }
-        else if (aatrabajo.checked)
-        {
-            debilidades2 += 1;
-        }
-        else if (retraido.checked)
-        {
-            debilidades3 += 1;
-        }
-        else if (preocupado.checked)
-        {
-            debilidades4 += 1;
-        }
-        //////////////////////////////////////////////////////////3.2
-
-        if (hablador.checked)
-        {
-            debilidades1 += 1;
-        }
-        else if (indiscreto.checked)
-        {
-            debilidades2 += 1;
-        }
-        else if (sensible2.checked)
-        {
-            debilidades3 += 1;
-        }
-        else if (timido2.checked)
-        {
-            debilidades4 += 1;
-        }
-        //////////////////////////////////////////////////////////3.3
-
-        if (dudoso.checked)
-        {
-            debilidades1 += 1;
-        }
-        else if (desorganizado.checked)
-        {
-            debilidades2 += 1;
-        }
-        else if (dominante.checked)
-        {
-            debilidades3 += 1;
-        }
-        else if (deprimido.checked)
-        {
-            debilidades4 += 1;
-        }
-        //////////////////////////////////////////////////////////3.4
-
-        if (inconsistente.checked)
-        {
-            debilidades1 += 1;
-        }
-        else if (intolerante.checked)
-        {
-            debilidades2 += 1;
-        }
-        else if (introvertido.checked)
-        {
-            debilidades3 += 1;
-        }
-        else if (indiferente2.checked)
-        {
-            debilidades4 += 1;
-        }
-        //////////////////////////////////////////////////////////3.5
-        if (desordenado.checked)
-        {
-            debilidades1 += 1;
-        }
-        else if (manipulador2.checked)
-        {
-            debilidades2 += 1;
-        }
-        else if (temperamental.checked)
-        {
-            debilidades3 += 1;
-        }
-        else if (quejumbroso.checked)
-        {
-            debilidades4 += 1;
-        }
-
-        //////////////////////////////////////////////////////////////////////////////////4///////////////////////////////////////////////////////////////////////////
-        
-        if (exhibicionista.checked)
-        {
-            debilidades1 += 1;
-        }
-        else if (terco.checked)
-        {
-            debilidades2 += 1;
-        }
-        else if (esceptico.checked)
-        {
-            debilidades3 += 1;
-        }
-        else if (lento.checked)
-        {
-            debilidades4 += 1;
-        }
-        //////////////////////////////////////////////////////////4.2
-
-        if (ostentoso.checked)
-        {
-            debilidades1 += 1;
-        }
-        else if (enseñoreador.checked)
-        {
-            debilidades2 += 1;
-        }
-        else if (solitario.checked)
-        {
-            debilidades3 += 1;
-        }
-        else if (perezoso.checked)
-        {
-            debilidades4 += 1;
-        }
-        //////////////////////////////////////////////////////////4.3
-
-        if (desmemoriado.checked)
-        {
-            debilidades1 += 1;
-        }
-        else if (languido.checked)
-        {
-            debilidades2 += 1;
-        }
-        else if (sospechoso.checked)
-        {
-            debilidades3 += 1;
-        }
-        else if (genio.checked)
-        {
-            debilidades4 += 1;
-        }
-        //////////////////////////////////////////////////////////4.4
-
-        if (inquieto.checked)
-        {
-            debilidades1 += 1;
-        }
-        else if (imprudente.checked)
-        {
-            debilidades2 += 1;
-        }
-        else if (vengativo.checked)
-        {
-            debilidades3 += 1;
-        }
-        else if (renuente.checked)
-        {
-            debilidades4 += 1;
-        }
-        //////////////////////////////////////////////////////////4.5
-        if (variable.checked)
-        {
-            debilidades1 += 1;
-        }
-        else if (astuto.checked)
-        {
-            debilidades2 += 1;
-        }
-        else if (criticon.checked)
-        {
-            debilidades3 += 1;
-        }
-        else if (transigente.checked)
-        {
-            debilidades4 += 1;
-        }
-
-        ////////////////////////////////////////////////////////////////////////////RESULTADOS//////////////////////////////////////////////////////////////
-        ////////////////////////////////////////////////////////////////////////////RESULTADOS//////////////////////////////////////////////////////////////
-        ////////////////////////////////////////////////////////////////////////////RESULTADOS//////////////////////////////////////////////////////////////
-
-        if (fortalezas1 + fortalezas2 + fortalezas3 + fortalezas4 + debilidades1 + debilidades2 + debilidades3 + debilidades4 == 40)
-        {
-            if (fortalezas1+debilidades1 > fortalezas2+debilidades2 && fortalezas1+debilidades1 > fortalezas3+debilidades3 && fortalezas1+debilidades1 > fortalezas4+debilidades4)
+            var debilidades1 = 0
+            var debilidades2 = 0
+            var debilidades3 = 0
+            var debilidades4 = 0
+            ////////////////////////////////////////////////////////1.1
+            if (animado.checked)
             {
-                document.getElementById('TituloFortalezas').innerHTML='Sanguíneo-popular';
-                document.getElementById('Fortalezasjs').innerHTML='<table class="TablaInternaFortalezas"><tr><td class="Emociones">Emociones</td></tr><tr><td><p>Personalidad atractiva, charlador, cuentista, la vida de la fiesta, buen sentido del humor, memoria para los colores, escuchado con agrado, emocional y demostrativo, entusiasta y expresivo, alegre, curioso, bueno en un escenario, inocente, vive en el presente, disposición cambiable, sinceridad de corazon, siempre es un niño</p></td></tr><tr><td class="Trabajo">Trabajo</td></tr><tr><td><p>Voluntario para el trabajo, piensa en nuevas actividades, se ve bien a primera vista, creativo y pintoresco, tiene energía y entusiasmo, empieza rápidamente, inspira a otros a unirse, anima a otros a trabajar</p></td></tr><tr><td class="Amistades">Amistades</td></tr><tr><td><p>Hace amigos fácilmente, ama a las personas, busca la aprobación, parece emocionante, es envidiado por otros, no es rencoroso, se disculpa rápidamente, evita el aburrimiento, gusta de actividades espontáneas</p></td></tr></table>';
-                document.getElementById('TituloDebilidades').innerHTML='Sanguíneo-popular';
-                document.getElementById('Debilidadesjs').innerHTML='<table class="TablaInternaFortalezas"><tr><td class="Emociones">Emociones</td></tr><tr><td><p>Parlachín compulsivo, exagerado, vive en lo trivial, no recuerda nombres, espanta a los demás, demasiado feliz para algunos, energía interminablem egoista, grita y se queja, inocente, tiene voz fuerte, y se ríe, controlado por las circustancias, se enoja facilmente, a algunos les parece falso, nunca crece</p></td></tr><tr><td class="Trabajo">Trabajo</td></tr><tr><td><p>Prefiere hablar, se olvida de sus obligaciones, no persiste, la confianza se le acaba rápido, indisciplinado, sus prioridades están fuera de ordén, se distrae fácilmente, pierde el tiempo hablando</p></td></tr><tr><td class="Amistades">Amistades</td></tr><tr><td><p>Detesta estar a solas, necesita ser la figura central, ser popular, busca la alabanza de los demás, domina las conversaciones, interrumpe y no escucha, responde por los demás, variable y olvidadizo, pone excusas, repite las mismas historias</p></td></tr></table>';            
+                fortalezas1 += 1;
             }
-            if (fortalezas2+debilidades2 > fortalezas1+debilidades1 && fortalezas2+debilidades2 > fortalezas3+debilidades3 && fortalezas2+debilidades2 > fortalezas4+debilidades4)
+            else if (aventurero.checked)
             {
-                document.getElementById('TituloFortalezas').innerHTML='Colérico-fuerte';
-                document.getElementById('Fortalezasjs').innerHTML='<table class="TablaInternaFortalezas"><tr><td class="Emociones">Emociones</td></tr><tr><td><p>Ha nacido líder, dinámico y activo, necesidad compulsiva de cambios, tiene que corregir lo equivocado, voluntad fuerte y decisivo, sin emociones, no se desanima fácilmente, independiente y autosuficiente, irradia confianza, puede dirigir cualquier cosa</p></td></tr><tr><td class="Trabajo">Trabajo</td></tr><tr><td><p>Orientado a las metas, ve el panorama completo, organiza bien, busca soluciones prácticas, rápido para la accion, delega el trabajo, insiste en la productividad, llega a la meta, estimula la actividad, lucha ante la oposición</p></td></tr><tr><td class="Amistades">Amistades</td></tr><tr><td><p>Poca necesidad de amigos, trabajará en actividad de grupos, guía y organiza, generalmente tiene la razón, sobresale en las emergencias</p></td></tr></table>';
-                document.getElementById('TituloDebilidades').innerHTML='Colérico-fuerte';
-                document.getElementById('Debilidadesjs').innerHTML='<table class="TablaInternaFortalezas"><tr><td class="Emociones">Emociones</td></tr><tr><td><p>Mandón, impaciente, se enoja rápido, demasiado irrespetuoso, le gusta la controversia, no se da por vencido si pierde, es demásiado fuerte, inflexible, no le gusta alabar a los demás, no gusta de lágrimas ni emociones, no simpatiza con los demás</p></td></tr><tr><td class="Trabajo">Trabajo</td></tr><tr><td><p>Poca tolerancia con los errores, no analiza los detalles, le molesta lo trivial, toma desiciones imprudentes, rudo sin tacto, gusta manipular a los demás, hace demandas, el fin justifica los medios, el trabajo puede ser su Dios, demanda lealtad en sus rangos</p></td></tr><tr><td class="Amistades">Amistades</td></tr><tr><td><p>Tiende a utilizar a las personas, dominante, decide por otros, sabe todo, puede hacer todo de la mejor manera, independiente, posesivo de los amigos y la pareja, no puede decir "lo siento", puede tener la razon pero no es popular</p></td></tr></table>';
+                fortalezas2 += 1;
             }
-            if (fortalezas3+debilidades3 > fortalezas1+debilidades1 && fortalezas3+debilidades3 > fortalezas2+debilidades2 && fortalezas3+debilidades3 > fortalezas4+debilidades4)
+            else if (analitico.checked)
             {
-                document.getElementById('TituloFortalezas').innerHTML='Melancólico-Perfeccionista';
-                document.getElementById('Fortalezasjs').innerHTML='<table class="TablaInternaFortalezas"><tr><td class="Emociones">Emociones</td></tr><tr><td><p>Profundo y pensador, analítico, serio, con propósito, tendencia a ser un genio, talentoso y creativo, artista o musico, filosófico y poeta, aprecia la belleza, sensible a los demás, sacrificado, meticuloso, idealista</p></td></tr><tr><td class="Trabajo">Trabajo</td></tr><tr><td><p>Orientado a los horarios, perfeccionista, normas muy altas, metículoso, persistente, logra lo que quiere, organizado, pulcro, económico, ve los problemas, da soluciones creativas, necesita terminar lo que empieza, gusta de gráficas, numeros y listas</p></td></tr><tr><td class="Amistades">Amistades</td></tr><tr><td><p>Hace amigos con cautela, está contento si queda atrás de los demás, evita llamar la atención, fiel y consagrado, resuelve problemas a otros, tiene intrés en las personas, llega a llorar por compasión, busca la pareja ideal</p></td></tr></table>';
-                document.getElementById('TituloDebilidades').innerHTML='Melancólico-Perfeccionista';
-                document.getElementById('Debilidadesjs').innerHTML='<table class="TablaInternaFortalezas"><tr><td class="Emociones">Emociones</td></tr><tr><td><p>Recuerda las cosas negativas, caprichoso y deprimido, le gusta ser lastimado, de humildad falsa, vive en otro mundo, tiene una imagen pobre de sí mismo, escucha lo que quiere oir, egoísta, demasiado introspectivo, tiene sentimientos de culpa, complejo de persecucion, tiende a ser hipocondriaco</p></td></tr><tr><td class="Trabajo">Trabajo</td></tr><tr><td><p>No está orientado hacia las personas, se deprime con las imperfecciones, escoge trabajos difíciles, vacila al empezar lo nuevo, pasa mucho tiempo en planes, prefiere el análisis al trabajo, de baja autoestima, difícil de complacer, de normas muy altas, necesita apoyo</p></td></tr><tr><td class="Amistades">Amistades</td></tr><tr><td><p>Vive a través de los demás socialmente inseguro, retraído, crítico de los demás, no es afectuoso, no gusta de los que se oponen a él, sospecha de las personas, antagonista y vengativo, no perdona, contradictorio, y escéptico cuando se le alaba</p></td></tr></table>';
+                fortalezas3 += 1;
             }
-            if (fortalezas4+debilidades4 > fortalezas1+debilidades1 && fortalezas4+debilidades4 > fortalezas2+debilidades2 && fortalezas4+debilidades4 > fortalezas3+debilidades3)
+            else if (adaptable.checked)
             {
-                document.getElementById('TituloFortalezas').innerHTML='Flemático-pasivo';
-                document.getElementById('Fortalezasjs').innerHTML='<table class="TablaInternaFortalezas"><tr><td class="Emociones">Emociones</td></tr><tr><td><p>Personalidad pobre, fácil de llevar y relajado, calmado, tranquilo y recogido, paciente, bien balanceado, de vida consistente, callado pero inteligente, simpático y amable, no muestra sus emociones, se reconcilia felizmente con la vida, es persona que sirve para todo</p></td></tr><tr><td class="Trabajo">Trabajo</td></tr><tr><td><p>Competente y persistente, pasivo y casi de acuerdo con todo, habilidades administrativas, mediador de problemas, evita los conflictos, bueno bajo presión, encuentra la manera fácil de funcionar</p></td></tr><tr><td class="Amistades">Amistades</td></tr><tr><td><p>Fácil de llevar con él, agradable, se disfruta con él, inofensivo, buen oyente, tiene un seco sentido del humor, le gusta observar a las personas, tiene muchos amigos y se interesa en los demás</p></td></tr></table>';
-                document.getElementById('TituloDebilidades').innerHTML='Flemático-pasivo';
-                document.getElementById('Debilidadesjs').innerHTML='<table class="TablaInternaFortalezas"><tr><td class="Emociones">Emociones</td></tr><tr><td><p>No es entusiasta, temeroso y preocupado, evita la responsabilidad, tiene una tranquila voluntad de acero, egoísta, demasiado tímido, y reticente, se compromete demasiado, se justifica a sí mismo</p></td></tr><tr><td class="Trabajo">Trabajo</td></tr><tr><td><p>No está orientado a tener metas, le falta motivación propia, es difícil lograr que se ponga en movimiento, resiente el ser empujado, perezoso y descuidado, desanima a los demás, prefiere ser espectador</p></td></tr><tr><td class="Amistades">Amistades</td></tr><tr><td><p>Apaga el entusiasmo, no gusta de participar, no es emocionante, indiferente a los planes, juzga a los demás, sarcástico y bromista, se resiste al cambio</p></td></tr></table>';
+                fortalezas4 += 1;
+            }
+            //////////////////////////////////////////////////////////1.2
+
+            if (jugueton.checked)
+            {
+                fortalezas1 += 1;
+            }
+            else if (persuasivo.checked)
+            {
+                fortalezas2 += 1;
+            }
+            else if (persistente.checked)
+            {
+                fortalezas3 += 1;
+            }
+            else if (pasivo.checked)
+            {
+                fortalezas4 += 1;
+            }
+            //////////////////////////////////////////////////////////1.3
+
+            if (amigable.checked)
+            {
+                fortalezas1 += 1;
+            }
+            else if (resuelto.checked)
+            {
+                fortalezas2 += 1;
+            }
+            else if (sacrificado.checked)
+            {
+                fortalezas3 += 1;
+            }
+            else if (sumiso.checked)
+            {
+                fortalezas4 += 1;
+            }
+            //////////////////////////////////////////////////////////1.4
+            if (convincente.checked)
+            {
+                fortalezas1 += 1;
+            }
+            else if (competitivo.checked)
+            {
+                fortalezas2 += 1;
+            }
+            else if (considerado.checked)
+            {
+                fortalezas3 += 1;
+            }
+            else if (controlado.checked)
+            {
+                fortalezas4 += 1;
+            }
+            //////////////////////////////////////////////////////////1.5
+
+            if (alentador.checked)
+            {
+                fortalezas1 += 1;
+            }
+            else if (recursivo.checked)
+            {
+                fortalezas2 += 1;
+            }
+            else if (respetuoso.checked)
+            {
+                fortalezas3 += 1;
+            }
+            else if (reservado.checked)
+            {
+                fortalezas4 += 1;
+            }
+            /////////////////////////////////////////////////////////////////////////////2////////////////////////////////////////////////////////////////////////////
+            if (sensato.checked)
+            {
+                fortalezas1 += 1;
+            }
+            else if (confiado.checked)
+            {
+                fortalezas2 += 1;
+            }
+            else if (sensible.checked)
+            {
+                fortalezas3 += 1;
+            }
+            else if (satisfecho.checked)
+            {
+                fortalezas4 += 1;
+            }
+            //////////////////////////////////////////////////////////2.2
+
+            if (promotor.checked)
+            {
+                fortalezas1 += 1;
+            }
+            else if (positivo.checked)
+            {
+                fortalezas2 += 1;
+            }
+            else if (planificador.checked)
+            {
+                fortalezas3 += 1;
+            }
+            else if (paciente.checked)
+            {
+                fortalezas4 += 1;
+            }
+            //////////////////////////////////////////////////////////2.3
+
+            if (espontaneo.checked)
+            {
+                fortalezas1 += 1;
+            }
+            else if (seguro.checked)
+            {
+                fortalezas2 += 1;
+            }
+            else if (programador.checked)
+            {
+                fortalezas3 += 1;
+            }
+            else if (prudente.checked)
+            {
+                fortalezas4 += 1;
+            }
+            //////////////////////////////////////////////////////////2.4
+
+            if (optimista.checked)
+            {
+                fortalezas1 += 1;
+            }
+            else if (franco.checked)
+            {
+                fortalezas2 += 1;
+            }
+            else if (ordenado.checked)
+            {
+                fortalezas3 += 1;
+            }
+            else if (servicial.checked)
+            {
+                fortalezas4 += 1;
+            }
+            //////////////////////////////////////////////////////////2.5
+
+            if (divertido.checked)
+            {
+                fortalezas1 += 1;
+            }
+            else if (fuerte.checked)
+            {
+                fortalezas2 += 1;
+            }
+            else if (fiel.checked)
+            {
+                fortalezas3 += 1;
+            }
+            else if (amistoso.checked)
+            {
+                fortalezas4 += 1;
+            }
+    //////////////////////////////////////////////////////////////////////////////////3///////////////////////////////////////////////////////////////////////////
+            
+            if (encantador.checked)
+            {
+                fortalezas1 += 1;
+            }
+            else if (atrevido.checked)
+            {
+                fortalezas2 += 1;
+            }
+            else if (detallista.checked)
+            {
+                fortalezas3 += 1;
+            }
+            else if (diplomatico.checked)
+            {
+                fortalezas4 += 1;
+            }
+            //////////////////////////////////////////////////////////3.2
+
+            if (alegre.checked)
+            {
+                fortalezas1 += 1;
+            }
+            else if (confidente.checked)
+            {
+                fortalezas2 += 1;
+            }
+            else if (educado.checked)
+            {
+                fortalezas3 += 1;
+            }
+            else if (consistente.checked)
+            {
+                fortalezas4 += 1;
+            }
+            //////////////////////////////////////////////////////////3.3
+
+            if (inspirador.checked)
+            {
+                fortalezas1 += 1;
+            }
+            else if (independiente.checked)
+            {
+                fortalezas2 += 1;
+            }
+            else if (idealista.checked)
+            {
+                fortalezas3 += 1;
+            }
+            else if (inofensivo.checked)
+            {
+                fortalezas4 += 1;
+            }
+            //////////////////////////////////////////////////////////3.4
+
+            if (demostrativo.checked)
+            {
+                fortalezas1 += 1;
+            }
+            else if (decidido.checked)
+            {
+                fortalezas2 += 1;
+            }
+            else if (jocoso.checked)
+            {
+                fortalezas3 += 1;
+            }
+            else if (meditador.checked)
+            {
+                fortalezas4 += 1;
+            }
+            //////////////////////////////////////////////////////////3.5
+            if (sociable.checked)
+            {
+                fortalezas1 += 1;
+            }
+            else if (mediador.checked)
+            {
+                fortalezas2 += 1;
+            }
+            else if (musical.checked)
+            {
+                fortalezas3 += 1;
+            }
+            else if (activo.checked)
+            {
+                fortalezas4 += 1;
             }
 
+            //////////////////////////////////////////////////////////////////////////////////4///////////////////////////////////////////////////////////////////////////
+            
+            if (charlador.checked)
+            {
+                fortalezas1 += 1;
+            }
+            else if (tenaz.checked)
+            {
+                fortalezas2 += 1;
+            }
+            else if (considerado3.checked)
+            {
+                fortalezas3 += 1;
+            }
+            else if (tolerante.checked)
+            {
+                fortalezas4 += 1;
+            }
+            //////////////////////////////////////////////////////////4.2
+
+            if (alegre2.checked)
+            {
+                fortalezas1 += 1;
+            }
+            else if (lider.checked)
+            {
+                fortalezas2 += 1;
+            }
+            else if (leal.checked)
+            {
+                fortalezas3 += 1;
+            }
+            else if (oyente.checked)
+            {
+                fortalezas4 += 1;
+            }
+            //////////////////////////////////////////////////////////4.3
+
+            if (adorable.checked)
+            {
+                fortalezas1 += 1;
+            }
+            else if (jefe.checked)
+            {
+                fortalezas2 += 1;
+            }
+            else if (planeador.checked)
+            {
+                fortalezas3 += 1;
+            }
+            else if (contento.checked)
+            {
+                fortalezas4 += 1;
+            }
+            //////////////////////////////////////////////////////////4.4
+
+            if (popular.checked)
+            {
+                fortalezas1 += 1;
+            }
+            else if (productivo.checked)
+            {
+                fortalezas2 += 1;
+            }
+            else if (perfeccionista.checked)
+            {
+                fortalezas3 += 1;
+            }
+            else if (placentero.checked)
+            {
+                fortalezas4 += 1;
+            }
+            //////////////////////////////////////////////////////////4.5
+            if (campante.checked)
+            {
+                fortalezas1 += 1;
+            }
+            else if (atrevido2.checked)
+            {
+                fortalezas2 += 1;
+            }
+            else if (comportado.checked)
+            {
+                fortalezas3 += 1;
+            }
+            else if (balanceado.checked)
+            {
+                fortalezas4 += 1;
+            }
+
+    //////////////////////////////////////////////////////////////////////////////////////DEBILIDADES////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////////DEBILIDADES////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////////DEBILIDADES////////////////////////////////////////////////////////////////
+            ////////////////////////////////////////////////////////1.1
+            if (arrogante.checked)
+            {
+                debilidades1 += 1;
+            }
+            else if (mandon.checked)
+            {
+                debilidades2 += 1;
+            }
+            else if (confuso.checked)
+            {
+                debilidades3 += 1;
+            }
+            else if (timido.checked)
+            {
+                debilidades4 += 1;
+            }
+            //////////////////////////////////////////////////////////1.2
+
+            if (indisciplinado.checked)
+            {
+                debilidades1 += 1;
+            }
+            else if (compasion.checked)
+            {
+                debilidades2 += 1;
+            }
+            else if (entusiasmo.checked)
+            {
+                debilidades3 += 1;
+            }
+            else if (acusador.checked)
+            {
+                debilidades4 += 1;
+            }
+            //////////////////////////////////////////////////////////1.3
+
+            if (rebelde.checked)
+            {
+                debilidades1 += 1;
+            }
+            else if (resentido.checked)
+            {
+                debilidades2 += 1;
+            }
+            else if (resistente.checked)
+            {
+                debilidades3 += 1;
+            }
+            else if (reservado2.checked)
+            {
+                debilidades4 += 1;
+            }
+            //////////////////////////////////////////////////////////1.4
+            if (olvidadizo.checked)
+            {
+                debilidades1 += 1;
+            }
+            else if (franco2.checked)
+            {
+                debilidades2 += 1;
+            }
+            else if (fastidioso.checked)
+            {
+                debilidades3 += 1;
+            }
+            else if (temeroso.checked)
+            {
+                debilidades4 += 1;
+            }
+            //////////////////////////////////////////////////////////1.5
+
+            if (interrumpe.checked)
+            {
+                debilidades1 += 1;
+            }
+            else if (impaciente.checked)
+            {
+                debilidades2 += 1;
+            }
+            else if (inseguro.checked)
+            {
+                debilidades3 += 1;
+            }
+            else if (indeciso.checked)
+            {
+                debilidades4 += 1;
+            }
+            /////////////////////////////////////////////////////////////////////////////2////////////////////////////////////////////////////////////////////////////
+            if (impredecible.checked)
+            {
+                debilidades1 += 1;
+            }
+            else if (afecto.checked)
+            {
+                debilidades2 += 1;
+            }
+            else if (restringido.checked)
+            {
+                debilidades3 += 1;
+            }
+            else if (no_popular.checked)
+            {
+                debilidades4 += 1;
+            }
+            //////////////////////////////////////////////////////////2.2
+
+            if (arbitrario.checked)
+            {
+                debilidades1 += 1;
+            }
+            else if (obstinado.checked)
+            {
+                debilidades2 += 1;
+            }
+            else if (contentar.checked)
+            {
+                debilidades3 += 1;
+            }
+            else if (vacilante.checked)
+            {
+                debilidades4 += 1;
+            }
+            //////////////////////////////////////////////////////////2.3
+
+            if (permisivo.checked)
+            {
+                debilidades1 += 1;
+            }
+            else if (orgulloso.checked)
+            {
+                debilidades2 += 1;
+            }
+            else if (pesimista.checked)
+            {
+                debilidades3 += 1;
+            }
+            else if (simple.checked)
+            {
+                debilidades4 += 1;
+            }
+            //////////////////////////////////////////////////////////2.4
+
+            if (enojar.checked)
+            {
+                debilidades1 += 1;
+            }
+            else if (argumentador.checked)
+            {
+                debilidades2 += 1;
+            }
+            else if (metas.checked)
+            {
+                debilidades3 += 1;
+            }
+            else if (distanciado.checked)
+            {
+                debilidades4 += 1;
+            }
+            //////////////////////////////////////////////////////////2.5
+
+            if (ingenuo.checked)
+            {
+                debilidades1 += 1;
+            }
+            else if (nervioso.checked)
+            {
+                debilidades2 += 1;
+            }
+            else if (indiferente.checked)
+            {
+                debilidades3 += 1;
+            }
+            else if (negativo.checked)
+            {
+                debilidades4 += 1;
+            }
+    //////////////////////////////////////////////////////////////////////////////////3///////////////////////////////////////////////////////////////////////////
+            
+            if (manipulador.checked)
+            {
+                debilidades1 += 1;
+            }
+            else if (aatrabajo.checked)
+            {
+                debilidades2 += 1;
+            }
+            else if (retraido.checked)
+            {
+                debilidades3 += 1;
+            }
+            else if (preocupado.checked)
+            {
+                debilidades4 += 1;
+            }
+            //////////////////////////////////////////////////////////3.2
+
+            if (hablador.checked)
+            {
+                debilidades1 += 1;
+            }
+            else if (indiscreto.checked)
+            {
+                debilidades2 += 1;
+            }
+            else if (sensible2.checked)
+            {
+                debilidades3 += 1;
+            }
+            else if (timido2.checked)
+            {
+                debilidades4 += 1;
+            }
+            //////////////////////////////////////////////////////////3.3
+
+            if (dudoso.checked)
+            {
+                debilidades1 += 1;
+            }
+            else if (desorganizado.checked)
+            {
+                debilidades2 += 1;
+            }
+            else if (dominante.checked)
+            {
+                debilidades3 += 1;
+            }
+            else if (deprimido.checked)
+            {
+                debilidades4 += 1;
+            }
+            //////////////////////////////////////////////////////////3.4
+
+            if (inconsistente.checked)
+            {
+                debilidades1 += 1;
+            }
+            else if (intolerante.checked)
+            {
+                debilidades2 += 1;
+            }
+            else if (introvertido.checked)
+            {
+                debilidades3 += 1;
+            }
+            else if (indiferente2.checked)
+            {
+                debilidades4 += 1;
+            }
+            //////////////////////////////////////////////////////////3.5
+            if (desordenado.checked)
+            {
+                debilidades1 += 1;
+            }
+            else if (manipulador2.checked)
+            {
+                debilidades2 += 1;
+            }
+            else if (temperamental.checked)
+            {
+                debilidades3 += 1;
+            }
+            else if (quejumbroso.checked)
+            {
+                debilidades4 += 1;
+            }
+
+            //////////////////////////////////////////////////////////////////////////////////4///////////////////////////////////////////////////////////////////////////
+            
+            if (exhibicionista.checked)
+            {
+                debilidades1 += 1;
+            }
+            else if (terco.checked)
+            {
+                debilidades2 += 1;
+            }
+            else if (esceptico.checked)
+            {
+                debilidades3 += 1;
+            }
+            else if (lento.checked)
+            {
+                debilidades4 += 1;
+            }
+            //////////////////////////////////////////////////////////4.2
+
+            if (ostentoso.checked)
+            {
+                debilidades1 += 1;
+            }
+            else if (enseñoreador.checked)
+            {
+                debilidades2 += 1;
+            }
+            else if (solitario.checked)
+            {
+                debilidades3 += 1;
+            }
+            else if (perezoso.checked)
+            {
+                debilidades4 += 1;
+            }
+            //////////////////////////////////////////////////////////4.3
+
+            if (desmemoriado.checked)
+            {
+                debilidades1 += 1;
+            }
+            else if (languido.checked)
+            {
+                debilidades2 += 1;
+            }
+            else if (sospechoso.checked)
+            {
+                debilidades3 += 1;
+            }
+            else if (genio.checked)
+            {
+                debilidades4 += 1;
+            }
+            //////////////////////////////////////////////////////////4.4
+
+            if (inquieto.checked)
+            {
+                debilidades1 += 1;
+            }
+            else if (imprudente.checked)
+            {
+                debilidades2 += 1;
+            }
+            else if (vengativo.checked)
+            {
+                debilidades3 += 1;
+            }
+            else if (renuente.checked)
+            {
+                debilidades4 += 1;
+            }
+            //////////////////////////////////////////////////////////4.5
+            if (variable.checked)
+            {
+                debilidades1 += 1;
+            }
+            else if (astuto.checked)
+            {
+                debilidades2 += 1;
+            }
+            else if (criticon.checked)
+            {
+                debilidades3 += 1;
+            }
+            else if (transigente.checked)
+            {
+                debilidades4 += 1;
+            }
+
+            ////////////////////////////////////////////////////////////////////////////RESULTADOS//////////////////////////////////////////////////////////////
+            ////////////////////////////////////////////////////////////////////////////RESULTADOS//////////////////////////////////////////////////////////////
+            ////////////////////////////////////////////////////////////////////////////RESULTADOS//////////////////////////////////////////////////////////////
+
+            if (fortalezas1 + fortalezas2 + fortalezas3 + fortalezas4 + debilidades1 + debilidades2 + debilidades3 + debilidades4 == 40)
+            {
+                if (fortalezas1+debilidades1 > fortalezas2+debilidades2 && fortalezas1+debilidades1 > fortalezas3+debilidades3 && fortalezas1+debilidades1 > fortalezas4+debilidades4)
+                {
+                    document.getElementById('TituloFortalezas').innerHTML='Sanguíneo-popular';
+                    document.getElementById('Fortalezasjs').innerHTML='<table class="TablaInternaFortalezas"><tr><td class="Emociones">Emociones</td></tr><tr><td><p>Personalidad atractiva, charlador, cuentista, la vida de la fiesta, buen sentido del humor, memoria para los colores, escuchado con agrado, emocional y demostrativo, entusiasta y expresivo, alegre, curioso, bueno en un escenario, inocente, vive en el presente, disposición cambiable, sinceridad de corazon, siempre es un niño</p></td></tr><tr><td class="Trabajo">Trabajo</td></tr><tr><td><p>Voluntario para el trabajo, piensa en nuevas actividades, se ve bien a primera vista, creativo y pintoresco, tiene energía y entusiasmo, empieza rápidamente, inspira a otros a unirse, anima a otros a trabajar</p></td></tr><tr><td class="Amistades">Amistades</td></tr><tr><td><p>Hace amigos fácilmente, ama a las personas, busca la aprobación, parece emocionante, es envidiado por otros, no es rencoroso, se disculpa rápidamente, evita el aburrimiento, gusta de actividades espontáneas</p></td></tr></table>';
+                    document.getElementById('TituloDebilidades').innerHTML='Sanguíneo-popular';
+                    document.getElementById('Debilidadesjs').innerHTML='<table class="TablaInternaFortalezas"><tr><td class="Emociones">Emociones</td></tr><tr><td><p>Parlachín compulsivo, exagerado, vive en lo trivial, no recuerda nombres, espanta a los demás, demasiado feliz para algunos, energía interminablem egoista, grita y se queja, inocente, tiene voz fuerte, y se ríe, controlado por las circustancias, se enoja facilmente, a algunos les parece falso, nunca crece</p></td></tr><tr><td class="Trabajo">Trabajo</td></tr><tr><td><p>Prefiere hablar, se olvida de sus obligaciones, no persiste, la confianza se le acaba rápido, indisciplinado, sus prioridades están fuera de ordén, se distrae fácilmente, pierde el tiempo hablando</p></td></tr><tr><td class="Amistades">Amistades</td></tr><tr><td><p>Detesta estar a solas, necesita ser la figura central, ser popular, busca la alabanza de los demás, domina las conversaciones, interrumpe y no escucha, responde por los demás, variable y olvidadizo, pone excusas, repite las mismas historias</p></td></tr></table>';            
+                }
+                if (fortalezas2+debilidades2 > fortalezas1+debilidades1 && fortalezas2+debilidades2 > fortalezas3+debilidades3 && fortalezas2+debilidades2 > fortalezas4+debilidades4)
+                {
+                    document.getElementById('TituloFortalezas').innerHTML='Colérico-fuerte';
+                    document.getElementById('Fortalezasjs').innerHTML='<table class="TablaInternaFortalezas"><tr><td class="Emociones">Emociones</td></tr><tr><td><p>Ha nacido líder, dinámico y activo, necesidad compulsiva de cambios, tiene que corregir lo equivocado, voluntad fuerte y decisivo, sin emociones, no se desanima fácilmente, independiente y autosuficiente, irradia confianza, puede dirigir cualquier cosa</p></td></tr><tr><td class="Trabajo">Trabajo</td></tr><tr><td><p>Orientado a las metas, ve el panorama completo, organiza bien, busca soluciones prácticas, rápido para la accion, delega el trabajo, insiste en la productividad, llega a la meta, estimula la actividad, lucha ante la oposición</p></td></tr><tr><td class="Amistades">Amistades</td></tr><tr><td><p>Poca necesidad de amigos, trabajará en actividad de grupos, guía y organiza, generalmente tiene la razón, sobresale en las emergencias</p></td></tr></table>';
+                    document.getElementById('TituloDebilidades').innerHTML='Colérico-fuerte';
+                    document.getElementById('Debilidadesjs').innerHTML='<table class="TablaInternaFortalezas"><tr><td class="Emociones">Emociones</td></tr><tr><td><p>Mandón, impaciente, se enoja rápido, demasiado irrespetuoso, le gusta la controversia, no se da por vencido si pierde, es demásiado fuerte, inflexible, no le gusta alabar a los demás, no gusta de lágrimas ni emociones, no simpatiza con los demás</p></td></tr><tr><td class="Trabajo">Trabajo</td></tr><tr><td><p>Poca tolerancia con los errores, no analiza los detalles, le molesta lo trivial, toma desiciones imprudentes, rudo sin tacto, gusta manipular a los demás, hace demandas, el fin justifica los medios, el trabajo puede ser su Dios, demanda lealtad en sus rangos</p></td></tr><tr><td class="Amistades">Amistades</td></tr><tr><td><p>Tiende a utilizar a las personas, dominante, decide por otros, sabe todo, puede hacer todo de la mejor manera, independiente, posesivo de los amigos y la pareja, no puede decir "lo siento", puede tener la razon pero no es popular</p></td></tr></table>';
+                }
+                if (fortalezas3+debilidades3 > fortalezas1+debilidades1 && fortalezas3+debilidades3 > fortalezas2+debilidades2 && fortalezas3+debilidades3 > fortalezas4+debilidades4)
+                {
+                    document.getElementById('TituloFortalezas').innerHTML='Melancólico-Perfeccionista';
+                    document.getElementById('Fortalezasjs').innerHTML='<table class="TablaInternaFortalezas"><tr><td class="Emociones">Emociones</td></tr><tr><td><p>Profundo y pensador, analítico, serio, con propósito, tendencia a ser un genio, talentoso y creativo, artista o musico, filosófico y poeta, aprecia la belleza, sensible a los demás, sacrificado, meticuloso, idealista</p></td></tr><tr><td class="Trabajo">Trabajo</td></tr><tr><td><p>Orientado a los horarios, perfeccionista, normas muy altas, metículoso, persistente, logra lo que quiere, organizado, pulcro, económico, ve los problemas, da soluciones creativas, necesita terminar lo que empieza, gusta de gráficas, numeros y listas</p></td></tr><tr><td class="Amistades">Amistades</td></tr><tr><td><p>Hace amigos con cautela, está contento si queda atrás de los demás, evita llamar la atención, fiel y consagrado, resuelve problemas a otros, tiene intrés en las personas, llega a llorar por compasión, busca la pareja ideal</p></td></tr></table>';
+                    document.getElementById('TituloDebilidades').innerHTML='Melancólico-Perfeccionista';
+                    document.getElementById('Debilidadesjs').innerHTML='<table class="TablaInternaFortalezas"><tr><td class="Emociones">Emociones</td></tr><tr><td><p>Recuerda las cosas negativas, caprichoso y deprimido, le gusta ser lastimado, de humildad falsa, vive en otro mundo, tiene una imagen pobre de sí mismo, escucha lo que quiere oir, egoísta, demasiado introspectivo, tiene sentimientos de culpa, complejo de persecucion, tiende a ser hipocondriaco</p></td></tr><tr><td class="Trabajo">Trabajo</td></tr><tr><td><p>No está orientado hacia las personas, se deprime con las imperfecciones, escoge trabajos difíciles, vacila al empezar lo nuevo, pasa mucho tiempo en planes, prefiere el análisis al trabajo, de baja autoestima, difícil de complacer, de normas muy altas, necesita apoyo</p></td></tr><tr><td class="Amistades">Amistades</td></tr><tr><td><p>Vive a través de los demás socialmente inseguro, retraído, crítico de los demás, no es afectuoso, no gusta de los que se oponen a él, sospecha de las personas, antagonista y vengativo, no perdona, contradictorio, y escéptico cuando se le alaba</p></td></tr></table>';
+                }
+                if (fortalezas4+debilidades4 > fortalezas1+debilidades1 && fortalezas4+debilidades4 > fortalezas2+debilidades2 && fortalezas4+debilidades4 > fortalezas3+debilidades3)
+                {
+                    document.getElementById('TituloFortalezas').innerHTML='Flemático-pasivo';
+                    document.getElementById('Fortalezasjs').innerHTML='<table class="TablaInternaFortalezas"><tr><td class="Emociones">Emociones</td></tr><tr><td><p>Personalidad pobre, fácil de llevar y relajado, calmado, tranquilo y recogido, paciente, bien balanceado, de vida consistente, callado pero inteligente, simpático y amable, no muestra sus emociones, se reconcilia felizmente con la vida, es persona que sirve para todo</p></td></tr><tr><td class="Trabajo">Trabajo</td></tr><tr><td><p>Competente y persistente, pasivo y casi de acuerdo con todo, habilidades administrativas, mediador de problemas, evita los conflictos, bueno bajo presión, encuentra la manera fácil de funcionar</p></td></tr><tr><td class="Amistades">Amistades</td></tr><tr><td><p>Fácil de llevar con él, agradable, se disfruta con él, inofensivo, buen oyente, tiene un seco sentido del humor, le gusta observar a las personas, tiene muchos amigos y se interesa en los demás</p></td></tr></table>';
+                    document.getElementById('TituloDebilidades').innerHTML='Flemático-pasivo';
+                    document.getElementById('Debilidadesjs').innerHTML='<table class="TablaInternaFortalezas"><tr><td class="Emociones">Emociones</td></tr><tr><td><p>No es entusiasta, temeroso y preocupado, evita la responsabilidad, tiene una tranquila voluntad de acero, egoísta, demasiado tímido, y reticente, se compromete demasiado, se justifica a sí mismo</p></td></tr><tr><td class="Trabajo">Trabajo</td></tr><tr><td><p>No está orientado a tener metas, le falta motivación propia, es difícil lograr que se ponga en movimiento, resiente el ser empujado, perezoso y descuidado, desanima a los demás, prefiere ser espectador</p></td></tr><tr><td class="Amistades">Amistades</td></tr><tr><td><p>Apaga el entusiasmo, no gusta de participar, no es emocionante, indiferente a los planes, juzga a los demás, sarcástico y bromista, se resiste al cambio</p></td></tr></table>';
+                }
+            }
+            else
+            {
+                alert("Asegurate de haber seleccionado una cualidad por cada fila");
+            }
+
+            
         }
-        else
-        {
-            alert("Asegurate de haber seleccionado una cualidad por cada fila");
-        }
-        
-        
-    });
+        });
     
-
     var animado = document.querySelector("input[name=Animado]");
     var aventurero = document.querySelector("input[name=Aventurero]");
     var analitico = document.querySelector("input[name=Analitico]");
