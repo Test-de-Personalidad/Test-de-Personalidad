@@ -6,10 +6,12 @@ function inicio()
 
     });
 
+
+    
     var boton = document.getElementById("boton");
         boton.addEventListener('click', function() {
-            if (presionado == false)
-    {
+            console.log("sí");
+            
             document.getElementById('TextoFortalezas').innerHTML='Fortalezas';
             document.getElementById('TextoDebilidades').innerHTML='Debilidades';
             var fortalezas1 = 0
@@ -741,7 +743,7 @@ function inicio()
             ////////////////////////////////////////////////////////////////////////////RESULTADOS//////////////////////////////////////////////////////////////
             ////////////////////////////////////////////////////////////////////////////RESULTADOS//////////////////////////////////////////////////////////////
             ////////////////////////////////////////////////////////////////////////////RESULTADOS//////////////////////////////////////////////////////////////
-
+            
             if (fortalezas1 + fortalezas2 + fortalezas3 + fortalezas4 + debilidades1 + debilidades2 + debilidades3 + debilidades4 == 40)
             {
                 if (fortalezas1+debilidades1 > fortalezas2+debilidades2 && fortalezas1+debilidades1 > fortalezas3+debilidades3 && fortalezas1+debilidades1 > fortalezas4+debilidades4)
@@ -750,6 +752,7 @@ function inicio()
                     document.getElementById('Fortalezasjs').innerHTML='<table class="TablaInternaFortalezas"><tr><td class="Emociones">Emociones</td></tr><tr><td><p>Personalidad atractiva, charlador, cuentista, la vida de la fiesta, buen sentido del humor, memoria para los colores, escuchado con agrado, emocional y demostrativo, entusiasta y expresivo, alegre, curioso, bueno en un escenario, inocente, vive en el presente, disposición cambiable, sinceridad de corazon, siempre es un niño</p></td></tr><tr><td class="Trabajo">Trabajo</td></tr><tr><td><p>Voluntario para el trabajo, piensa en nuevas actividades, se ve bien a primera vista, creativo y pintoresco, tiene energía y entusiasmo, empieza rápidamente, inspira a otros a unirse, anima a otros a trabajar</p></td></tr><tr><td class="Amistades">Amistades</td></tr><tr><td><p>Hace amigos fácilmente, ama a las personas, busca la aprobación, parece emocionante, es envidiado por otros, no es rencoroso, se disculpa rápidamente, evita el aburrimiento, gusta de actividades espontáneas</p></td></tr></table>';
                     document.getElementById('TituloDebilidades').innerHTML='Sanguíneo-popular';
                     document.getElementById('Debilidadesjs').innerHTML='<table class="TablaInternaFortalezas"><tr><td class="Emociones">Emociones</td></tr><tr><td><p>Parlachín compulsivo, exagerado, vive en lo trivial, no recuerda nombres, espanta a los demás, demasiado feliz para algunos, energía interminablem egoista, grita y se queja, inocente, tiene voz fuerte, y se ríe, controlado por las circustancias, se enoja facilmente, a algunos les parece falso, nunca crece</p></td></tr><tr><td class="Trabajo">Trabajo</td></tr><tr><td><p>Prefiere hablar, se olvida de sus obligaciones, no persiste, la confianza se le acaba rápido, indisciplinado, sus prioridades están fuera de ordén, se distrae fácilmente, pierde el tiempo hablando</p></td></tr><tr><td class="Amistades">Amistades</td></tr><tr><td><p>Detesta estar a solas, necesita ser la figura central, ser popular, busca la alabanza de los demás, domina las conversaciones, interrumpe y no escucha, responde por los demás, variable y olvidadizo, pone excusas, repite las mismas historias</p></td></tr></table>';            
+                    document.getElementById('print').innerHTML='<button type="submit" class="botonP" id="print2"> <a href="\Sanguineo.pdf" target="_blank"><img class="image" src="https://img.icons8.com/ios-glyphs/30/000000/print.png"/></button>';
                 }
                 if (fortalezas2+debilidades2 > fortalezas1+debilidades1 && fortalezas2+debilidades2 > fortalezas3+debilidades3 && fortalezas2+debilidades2 > fortalezas4+debilidades4)
                 {
@@ -757,6 +760,7 @@ function inicio()
                     document.getElementById('Fortalezasjs').innerHTML='<table class="TablaInternaFortalezas"><tr><td class="Emociones">Emociones</td></tr><tr><td><p>Ha nacido líder, dinámico y activo, necesidad compulsiva de cambios, tiene que corregir lo equivocado, voluntad fuerte y decisivo, sin emociones, no se desanima fácilmente, independiente y autosuficiente, irradia confianza, puede dirigir cualquier cosa</p></td></tr><tr><td class="Trabajo">Trabajo</td></tr><tr><td><p>Orientado a las metas, ve el panorama completo, organiza bien, busca soluciones prácticas, rápido para la accion, delega el trabajo, insiste en la productividad, llega a la meta, estimula la actividad, lucha ante la oposición</p></td></tr><tr><td class="Amistades">Amistades</td></tr><tr><td><p>Poca necesidad de amigos, trabajará en actividad de grupos, guía y organiza, generalmente tiene la razón, sobresale en las emergencias</p></td></tr></table>';
                     document.getElementById('TituloDebilidades').innerHTML='Colérico-fuerte';
                     document.getElementById('Debilidadesjs').innerHTML='<table class="TablaInternaFortalezas"><tr><td class="Emociones">Emociones</td></tr><tr><td><p>Mandón, impaciente, se enoja rápido, demasiado irrespetuoso, le gusta la controversia, no se da por vencido si pierde, es demásiado fuerte, inflexible, no le gusta alabar a los demás, no gusta de lágrimas ni emociones, no simpatiza con los demás</p></td></tr><tr><td class="Trabajo">Trabajo</td></tr><tr><td><p>Poca tolerancia con los errores, no analiza los detalles, le molesta lo trivial, toma desiciones imprudentes, rudo sin tacto, gusta manipular a los demás, hace demandas, el fin justifica los medios, el trabajo puede ser su Dios, demanda lealtad en sus rangos</p></td></tr><tr><td class="Amistades">Amistades</td></tr><tr><td><p>Tiende a utilizar a las personas, dominante, decide por otros, sabe todo, puede hacer todo de la mejor manera, independiente, posesivo de los amigos y la pareja, no puede decir "lo siento", puede tener la razon pero no es popular</p></td></tr></table>';
+                    document.getElementById('print').innerHTML='<button type="submit" class="botonP" id="print2"> <a href="\Colerico.pdf" target="_blank"><img class="image" src="https://img.icons8.com/ios-glyphs/30/000000/print.png"/></button>';
                 }
                 if (fortalezas3+debilidades3 > fortalezas1+debilidades1 && fortalezas3+debilidades3 > fortalezas2+debilidades2 && fortalezas3+debilidades3 > fortalezas4+debilidades4)
                 {
@@ -764,6 +768,7 @@ function inicio()
                     document.getElementById('Fortalezasjs').innerHTML='<table class="TablaInternaFortalezas"><tr><td class="Emociones">Emociones</td></tr><tr><td><p>Profundo y pensador, analítico, serio, con propósito, tendencia a ser un genio, talentoso y creativo, artista o musico, filosófico y poeta, aprecia la belleza, sensible a los demás, sacrificado, meticuloso, idealista</p></td></tr><tr><td class="Trabajo">Trabajo</td></tr><tr><td><p>Orientado a los horarios, perfeccionista, normas muy altas, metículoso, persistente, logra lo que quiere, organizado, pulcro, económico, ve los problemas, da soluciones creativas, necesita terminar lo que empieza, gusta de gráficas, numeros y listas</p></td></tr><tr><td class="Amistades">Amistades</td></tr><tr><td><p>Hace amigos con cautela, está contento si queda atrás de los demás, evita llamar la atención, fiel y consagrado, resuelve problemas a otros, tiene intrés en las personas, llega a llorar por compasión, busca la pareja ideal</p></td></tr></table>';
                     document.getElementById('TituloDebilidades').innerHTML='Melancólico-Perfeccionista';
                     document.getElementById('Debilidadesjs').innerHTML='<table class="TablaInternaFortalezas"><tr><td class="Emociones">Emociones</td></tr><tr><td><p>Recuerda las cosas negativas, caprichoso y deprimido, le gusta ser lastimado, de humildad falsa, vive en otro mundo, tiene una imagen pobre de sí mismo, escucha lo que quiere oir, egoísta, demasiado introspectivo, tiene sentimientos de culpa, complejo de persecucion, tiende a ser hipocondriaco</p></td></tr><tr><td class="Trabajo">Trabajo</td></tr><tr><td><p>No está orientado hacia las personas, se deprime con las imperfecciones, escoge trabajos difíciles, vacila al empezar lo nuevo, pasa mucho tiempo en planes, prefiere el análisis al trabajo, de baja autoestima, difícil de complacer, de normas muy altas, necesita apoyo</p></td></tr><tr><td class="Amistades">Amistades</td></tr><tr><td><p>Vive a través de los demás socialmente inseguro, retraído, crítico de los demás, no es afectuoso, no gusta de los que se oponen a él, sospecha de las personas, antagonista y vengativo, no perdona, contradictorio, y escéptico cuando se le alaba</p></td></tr></table>';
+                    document.getElementById('print').innerHTML='<button type="submit" class="botonP" id="print2"> <a href="\Melancolico.pdf" target="_blank"><img class="image" src="https://img.icons8.com/ios-glyphs/30/000000/print.png"/></button>';
                 }
                 if (fortalezas4+debilidades4 > fortalezas1+debilidades1 && fortalezas4+debilidades4 > fortalezas2+debilidades2 && fortalezas4+debilidades4 > fortalezas3+debilidades3)
                 {
@@ -771,6 +776,7 @@ function inicio()
                     document.getElementById('Fortalezasjs').innerHTML='<table class="TablaInternaFortalezas"><tr><td class="Emociones">Emociones</td></tr><tr><td><p>Personalidad pobre, fácil de llevar y relajado, calmado, tranquilo y recogido, paciente, bien balanceado, de vida consistente, callado pero inteligente, simpático y amable, no muestra sus emociones, se reconcilia felizmente con la vida, es persona que sirve para todo</p></td></tr><tr><td class="Trabajo">Trabajo</td></tr><tr><td><p>Competente y persistente, pasivo y casi de acuerdo con todo, habilidades administrativas, mediador de problemas, evita los conflictos, bueno bajo presión, encuentra la manera fácil de funcionar</p></td></tr><tr><td class="Amistades">Amistades</td></tr><tr><td><p>Fácil de llevar con él, agradable, se disfruta con él, inofensivo, buen oyente, tiene un seco sentido del humor, le gusta observar a las personas, tiene muchos amigos y se interesa en los demás</p></td></tr></table>';
                     document.getElementById('TituloDebilidades').innerHTML='Flemático-pasivo';
                     document.getElementById('Debilidadesjs').innerHTML='<table class="TablaInternaFortalezas"><tr><td class="Emociones">Emociones</td></tr><tr><td><p>No es entusiasta, temeroso y preocupado, evita la responsabilidad, tiene una tranquila voluntad de acero, egoísta, demasiado tímido, y reticente, se compromete demasiado, se justifica a sí mismo</p></td></tr><tr><td class="Trabajo">Trabajo</td></tr><tr><td><p>No está orientado a tener metas, le falta motivación propia, es difícil lograr que se ponga en movimiento, resiente el ser empujado, perezoso y descuidado, desanima a los demás, prefiere ser espectador</p></td></tr><tr><td class="Amistades">Amistades</td></tr><tr><td><p>Apaga el entusiasmo, no gusta de participar, no es emocionante, indiferente a los planes, juzga a los demás, sarcástico y bromista, se resiste al cambio</p></td></tr></table>';
+                    document.getElementById('print').innerHTML='<button type="submit" class="botonP" id="print2"> <a href="\Flematico.pdf" target="_blank"><img class="image" src="https://img.icons8.com/ios-glyphs/30/000000/print.png"/></button>';
                 }
             }
             else
@@ -780,7 +786,8 @@ function inicio()
 
             
         }
-        });
+        );
+        
     
     var animado = document.querySelector("input[name=Animado]");
     var aventurero = document.querySelector("input[name=Aventurero]");

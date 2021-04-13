@@ -13,24 +13,26 @@
 {
     color: #00a288;
     font-size: 1.2em;
+    
 }
 .TextoDebilidades
 {
     color: #fb464f;
     font-size: 1.2em;
+    
 }
 
 p{
-    text-align: left;
+    text-align: justify;
     font-size: 1em;
 }
 .TablaInternaFortalezas
 {
-    width:1vmax;
+    width:18vmax;
 }
 .TablaInternaDebilidades
 {
-    width:1vmax;
+    width:18vmax;
 }
 .Emociones
 {
@@ -38,6 +40,7 @@ p{
     font-size: 25px;
     text-align: left;
     color: white;
+    width: 20vmax;
     padding-left: 10px;
 }
 .Trabajo
@@ -57,7 +60,8 @@ p{
 }
 .ResultadoFortalezas
 {
-    width: 100%;
+    
+    height: 100%;
 }
 
 .TablaFortalezas
@@ -86,6 +90,7 @@ p{
 .ResultadoDebilidades
 {
     width: 100%;
+    height: 100%;
 }
 
 .TablaDebilidades
@@ -115,7 +120,7 @@ p{
     margin-bottom: 50px;
     margin-top: 20px;
     width: 15vmax; 
-    margin-left: 40%;
+    margin-left: 30%;
     transform: translateX(-50%);
     text-align: center;
     text-decoration: none;
@@ -148,7 +153,25 @@ p{
     margin-top: 20px;
     height: 3.2vmax;
     width: 14vmax; 
-    margin-left: 50px;
+    margin-left: 35px;
+    
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #ecea3ffb;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+.botonP
+{
+    margin-bottom: 50px;
+    margin-top: 20px;
+    height: 3vmax;
+    width: 3vmax; 
+    
     
     text-align: center;
     text-decoration: none;
