@@ -9,6 +9,9 @@
 {
     font-size:1vmax;
 }
+.texto{
+    font-size: 1.2vmax;
+}
 .TextoFortalezas
 {
     color: #00a288;
@@ -24,7 +27,7 @@
 
 p{
     text-align: justify;
-    font-size: 1em;
+    font-size: 1vmax;
 }
 .TablaInternaFortalezas
 {
